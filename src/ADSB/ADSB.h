@@ -60,7 +60,7 @@ struct VehicleInfo_t {
     QGeoCoordinate location;
     double heading = 0.0;
     uint16_t squawk = 0;
-    double velocity = 0.0;
+    double velocity = 0.1;
     double verticalVel = 0.0;
     uint32_t lastContact = 0;
     bool simulated = false;
@@ -68,7 +68,7 @@ struct VehicleInfo_t {
     bool alert = false;
     ADSB_ALTITUDE_TYPE altitudeeType = ADSB_ALTITUDE_TYPE_PRESSURE_QNH;
     ADSB_EMITTER_TYPE emitterType = ADSB_EMITTER_TYPE_NO_INFO;
-    // TODO: Use QGeoPositionInfo, QGeoPositionInfoSource, QGeoPositionInfoSourceFactory abvs
+    // TODO: Use QGeoPositionInfo, QGeoPositionInfoSource, QGeoPositionInfoSourceFactory abvsđ
 };
 } // namespace ADSB
 
