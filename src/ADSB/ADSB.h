@@ -68,7 +68,7 @@ struct VehicleInfo_t {
     bool alert = false;
     ADSB_ALTITUDE_TYPE altitudeeType = ADSB_ALTITUDE_TYPE_PRESSURE_QNH;
     ADSB_EMITTER_TYPE emitterType = ADSB_EMITTER_TYPE_NO_INFO;
-    // TODO: Use QGeoPositionInfo, QGeoPositionInfoSource, QGeoPositionInfoSourceFactory
+    // TODO: Use QGeoPositionInfo, QGeoPositionInfoSource, QGeoPositionInfoSourceFactory abvs
 };
 } // namespace ADSB
 
