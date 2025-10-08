@@ -48,8 +48,21 @@ apt-get install -y -qq --no-install-recommends \
     zsync
 
 pipx ensurepath
-pipx install cmake ninja
+pipx install ninja
 
+sudo apt-get remove -y cmake
+
+# Download CMake 3.25.0 for ARM64
+wget https://github.com/Kitware/CMake/releases/download/v3.25.0/cmake-3.25.0-linux-aarch64.sh
+
+# Make it executable
+chmod +x cmake-3.25.0-linux-aarch64.sh
+
+# Install CMake
+sudo ./cmake-3.25.0-linux-aarch64.sh --prefix=/usr/local --skip-license
+
+# Check the installed version
+cmake --version
 # --------------------------------------------------------------------
 # Qt6 compile/runtime dependencies
 # See: https://doc.qt.io/qt-6/linux-requirements.html
